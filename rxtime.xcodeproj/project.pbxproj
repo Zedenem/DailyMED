@@ -24,6 +24,7 @@
 		876E51891A228B51008E5213 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876E51881A228B51008E5213 /* Interface.storyboard */; };
 		876E518B1A228B51008E5213 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876E518A1A228B51008E5213 /* Images.xcassets */; };
 		876E518E1A228B51008E5213 /* rxtime WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 876E516C1A228B51008E5213 /* rxtime WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		876E519D1A229483008E5213 /* WKPillTableRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 876E519C1A229483008E5213 /* WKPillTableRowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		876E518A1A228B51008E5213 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		876E51961A228E4C008E5213 /* rxtime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = rxtime.entitlements; sourceTree = "<group>"; };
 		876E51971A228E69008E5213 /* rxtime WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "rxtime WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		876E519B1A229483008E5213 /* WKPillTableRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPillTableRowController.h; sourceTree = "<group>"; };
+		876E519C1A229483008E5213 /* WKPillTableRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPillTableRowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,8 @@
 				876E51781A228B51008E5213 /* NotificationController.m */,
 				876E517A1A228B51008E5213 /* GlanceController.h */,
 				876E517B1A228B51008E5213 /* GlanceController.m */,
+				876E519B1A229483008E5213 /* WKPillTableRowController.h */,
+				876E519C1A229483008E5213 /* WKPillTableRowController.m */,
 				876E517D1A228B51008E5213 /* Images.xcassets */,
 				876E51711A228B51008E5213 /* Supporting Files */,
 			);
@@ -435,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876E519D1A229483008E5213 /* WKPillTableRowController.m in Sources */,
 				876E51791A228B51008E5213 /* NotificationController.m in Sources */,
 				876E51761A228B51008E5213 /* InterfaceController.m in Sources */,
 				876E517C1A228B51008E5213 /* GlanceController.m in Sources */,

@@ -1,26 +1,130 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--DailyMED-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller title="DailyMED" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" hasDetent="YES" id="skY-jM-cuN">
+                            <items>
+                                <group width="1" alignment="left" id="tp5-u3-MTL">
+                                    <items>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="Rm5-wB-uCa"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="FS1-kj-3FY"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="M93-Vv-UUD"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="MwU-JX-oly"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" id="dTy-X6-vpF">
+                                    <items>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="uKe-ta-fAy"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="RVX-yU-D1Q"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="TJQ-ax-Nes"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="Ggx-aT-2e4"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="BfL-Rw-HCV"/>
+                        <table alignment="left" layout="vertical" id="eog-6W-GYz">
+                            <items>
+                                <tableRow identifier="PillRow" id="Jz8-Nq-hrM" customClass="WKPillTableRowController">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="J79-Qu-RhY">
+                                        <items>
+                                            <group width="1" alignment="left" id="JGe-JU-79c">
+                                                <items>
+                                                    <imageView width="30" height="30" alignment="left" image="pill" contentMode="scaleAspectFit" id="gBl-R5-9bt"/>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" minimumScaleFactor="0.50000000000000011" id="dEV-Z6-27f"/>
+                                                </items>
+                                            </group>
+                                            <separator alignment="left" id="l17-qT-tzN"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="pillImage" destination="gBl-R5-9bt" id="axX-Oa-CUQ"/>
+                                        <outlet property="pillLabel" destination="dEV-Z6-27f" id="aPb-VV-HuB"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="eighthPillImage" destination="Ggx-aT-2e4" id="uzj-pa-mIB"/>
+                        <outlet property="fifthPillImage" destination="uKe-ta-fAy" id="13s-0L-ZZy"/>
+                        <outlet property="firstPillImage" destination="Rm5-wB-uCa" id="9yc-l2-CbG"/>
+                        <outlet property="fourthPillImage" destination="MwU-JX-oly" id="7b3-3M-mqc"/>
+                        <outlet property="secondPillImage" destination="FS1-kj-3FY" id="Z3t-VN-F6f"/>
+                        <outlet property="seventhPillImage" destination="TJQ-ax-Nes" id="qzE-Zf-SRt"/>
+                        <outlet property="sixthPillImage" destination="RVX-yU-D1Q" id="QBg-f5-5mf"/>
+                        <outlet property="table" destination="eog-6W-GYz" id="ICT-78-oYz"/>
+                        <outlet property="thirdPillImage" destination="M93-Vv-UUD" id="yao-b5-TFc"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="fr0-Pj-zmj">
+            <objects>
+                <controller id="k7x-J4-ftn"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="DailyMED_homeicon" id="jXC-2x-gyM"/>
+                                <label width="103.5" alignment="left" verticalAlignment="center" text="5 Pills Left" id="R15-ch-6cj">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <separator alignment="left" id="g37-GP-MCC"/>
+                                <group width="1" alignment="left" id="Fhq-wC-iGK">
+                                    <items>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="dZb-V4-Sj7"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="pDp-tv-1u0"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="QqX-FF-fMA"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="IWs-SZ-tn5"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" id="E3z-uN-Rny">
+                                    <items>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="7gx-Qa-MmK"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="UuB-5I-Oyf"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="jzs-S4-yDy"/>
+                                        <imageView width="0.25" height="44" alignment="left" contentMode="scaleAspectFit" id="c5i-Xg-OTM"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="eighthPillImage" destination="c5i-Xg-OTM" id="QEq-bD-MwB"/>
+                        <outlet property="fifthPillImage" destination="7gx-Qa-MmK" id="Iio-b5-rmq"/>
+                        <outlet property="firstPillImage" destination="dZb-V4-Sj7" id="K1s-bV-A8W"/>
+                        <outlet property="fourthPillImage" destination="IWs-SZ-tn5" id="bba-BR-t9w"/>
+                        <outlet property="secondPillImage" destination="pDp-tv-1u0" id="aH4-Q4-qMx"/>
+                        <outlet property="seventhPillImage" destination="jzs-S4-yDy" id="CNa-UO-jqm"/>
+                        <outlet property="sixthPillImage" destination="UuB-5I-Oyf" id="z8E-mt-zGc"/>
+                        <outlet property="thirdPillImage" destination="QqX-FF-fMA" id="lJ1-xb-NPh"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>
@@ -30,9 +134,10 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="XkS-y5-khE"/>
                     </items>
                     <notificationCategory key="notificationCategory" id="JfB-70-Muf"/>
+                    <color key="backgroundColor" red="0.0" green="0.60784313725490191" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
                         <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
@@ -44,7 +149,42 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController">
+                    <items>
+                        <group width="1" alignment="left" hasDetent="YES" id="eh9-FN-x29">
+                            <items>
+                                <group width="0.5" alignment="left" id="c1p-35-9yc">
+                                    <items>
+                                        <label height="44" alignment="center" verticalAlignment="center" text="2x" id="yqZ-p0-ECl"/>
+                                        <imageView width="30" height="30" alignment="center" verticalAlignment="center" image="Metoprolol" id="srf-nr-y9g"/>
+                                    </items>
+                                </group>
+                                <group width="0.5" alignment="left" id="Wns-gw-80b">
+                                    <items>
+                                        <label height="44" alignment="center" verticalAlignment="center" text="2x" id="xQx-98-tcv"/>
+                                        <imageView width="30" height="30" alignment="center" verticalAlignment="center" image="Lisinopril" id="C7t-9b-63J"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" hasDetent="YES" id="yAH-Nb-zDk">
+                            <items>
+                                <label alignment="left" text="2x Metoprolol" id="Oya-gY-0Eh"/>
+                                <label alignment="left" text="1x Lisinopril" id="8uo-JD-qxX"/>
+                            </items>
+                            <edgeInsets key="margins" left="10" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="SVD-fG-Up2">
+                            <items>
+                                <label alignment="left" text="Due in " id="nRH-DU-6z7"/>
+                                <label alignment="left" text="15 min" id="9fh-hh-gMO">
+                                    <color key="textColor" red="0.17254902420000001" green="0.55294120309999995" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="10" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>

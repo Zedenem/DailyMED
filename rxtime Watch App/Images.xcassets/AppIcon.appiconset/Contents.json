@@ -11,6 +11,7 @@
       "size" : "18x18",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "DailyMED_smNOTIFICATIONicon.png",
       "role" : "notificationCenter",
       "subtype" : "42mm"
     },
@@ -37,6 +38,7 @@
       "size" : "44x44",
       "idiom" : "watch",
       "scale" : "2x",
+      "filename" : "DailyMED_homeicon.png",
       "role" : "appLauncher",
       "subtype" : "42mm"
     },
