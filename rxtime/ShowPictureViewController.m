@@ -24,6 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)acceptPicture:(id)sender {
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 /*

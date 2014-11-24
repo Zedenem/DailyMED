@@ -45,7 +45,7 @@
 
 - (IBAction)addMedication:(id)sender {
     // using dummy data.
-    [self.view removeFromSuperview];
+    [self.navigationController popToRootViewControllerAnimated:YES];
     //remove self from super view show calender view.
 }
 
